@@ -1,5 +1,5 @@
 # Throttle-Debounce-demo
-使用 vue3 演示防抖和节流效果的简单小项目
+使用 vue3 演示防抖和节流效果的简易项目
 
 
 
