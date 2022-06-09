@@ -1,9 +1,9 @@
 <template>
     <div class="card-body c">
         <h4 class="card-title">> 节流</h4>
-        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-            card's content.</p>
+        <h6 class="card-subtitle mb-2 text-muted">Throttle</h6>
+        <p class="card-text">如果一个函数持续的频繁的触发，那么就让其触发周期保持在n秒</p>
+        <br><br><br>
         <a href="Throttle" class="card-link">详细介绍</a>
         <br><br>
         <a href="ThrottleExample" class="card-link">查看实例</a>
@@ -18,7 +18,6 @@
 .c {
     border: solid;
     border-radius: 20px;
-    margin: 20px 105px 20px 70px;
-    height: 280px;
+    height: 300px;
 }
 </style>
