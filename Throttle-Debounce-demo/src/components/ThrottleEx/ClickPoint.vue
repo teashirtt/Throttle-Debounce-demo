@@ -46,7 +46,7 @@ const throttle = () => {
   if (flag) {
     setTimeout(() => {
       val2.value++;
-      flag = true; //异步
+      flag = true; 
     }, time.value)
   }
   flag = false;

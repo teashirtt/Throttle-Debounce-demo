@@ -1,38 +1,24 @@
 <template>
-    <div class="card">
-        <div class="cardbody">
-            <div class="row">
-                <div class="col-5">
-                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked
-                            @click="fun(250)">
-                        <label class="btn btn-outline-success" for="btnradio1">250ms</label>
+    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked
+            @click="fun(250)">
+        <label class="btn btn-outline-success" for="btnradio1">250ms</label>
 
-                        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off"
-                            @click="fun(500)">
-                        <label class="btn btn-outline-success" for="btnradio2">500ms</label>
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" @click="fun(500)">
+        <label class="btn btn-outline-success" for="btnradio2">500ms</label>
 
-                        <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off"
-                            @click="fun(1000)">
-                        <label class="btn btn-outline-success" for="btnradio3">1000ms</label>
-                    </div>
-                    <div class="form-floating">
-                        <textarea v-model="ct" class="form-control" placeholder="Leave a comment here"
-                            id="floatingTextarea" @input="func()"></textarea>
-                        <label for="floatingTextarea">input</label>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" @click="fun(1000)">
+        <label class="btn btn-outline-success" for="btnradio3">1000ms</label>
     </div>
+    <textarea v-model="ct" class="form-control" placeholder="在此输入" id="floatingTextarea" @input="func"></textarea>
     <div class="container">
         <div class="row">
             <div class="col-6 out">
-                <div>模拟无防抖的请求过程</div>
+                <span>模拟无防抖的请求过程</span>
                 <FactOutput :content="content" ref="SonRef1" class="area" />
             </div>
             <div class="col-6 out">
-                <div>模拟有防抖的请求过程</div>
+                <span>模拟有防抖的请求过程</span>
                 <DebouceOutput :content="content" ref="SonRef2" class="area" />
             </div>
         </div>
@@ -41,7 +27,7 @@
 </template>
 
 <script setup>
-import { ref,reactive } from 'vue';
+import { ref, reactive } from 'vue';
 import FactOutput from './FactOutput';
 import DebouceOutput from './DebouceOutput';
 
@@ -71,7 +57,8 @@ const func = () => {
         id: content.cnt1,
         word: ct.value
     });
-    if (content.cont1.length > 15) content.cont1.shift();
+    SonRef1.value.ToBottom();
+
     if (time) {
         clearTimeout(time);
     }
@@ -80,20 +67,25 @@ const func = () => {
         content.cont2.push({
             id: content.cnt2,
             word: ct.value
-        })
-        if (content.cont2.length > 15) content.cont2.shift();
+        });
+        SonRef2.value.ToBottom();
     }, interval)
 };
-
 </script>
 
 <style scoped>
-.card {
-    margin: 5px 95px;
+.btn-group {
+
+    margin: 3px 100px;
 }
 
-.form-control {
-    margin-top: 3px;
+span {
+    margin-left: 33%;
 }
 
+textarea {
+    width: 40%;
+    height: 100px;
+    margin: 10px auto 10px;
+}
 </style>

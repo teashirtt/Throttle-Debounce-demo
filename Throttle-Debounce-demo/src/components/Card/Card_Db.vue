@@ -16,9 +16,14 @@
 </script>
 
 <style scoped>
-.c {
+.card-body {
     border: solid;
     border-radius: 20px;
     height: 300px;
+}
+
+.card-body:hover {
+    box-shadow: 3px 3px 10px gray;
+    transition: 500ms;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <div class="card" id="card1">
     <div class="card-body">
       <div v-for="item in props.content.cont1" :key="item.id" class="sc1">
         {{ item.word }}
@@ -16,15 +16,28 @@ const props = defineProps({
     required: true,
   },
 });
+
 const ClearOut = () => {
   let st = document.querySelectorAll('.sc1');
   for (let it of st) it.innerHTML = "";
 };
 
+const ToBottom = () => {
+  let scroll = document.getElementById('card1');
+  scroll.scrollTop = scroll.scrollHeight;
+}
+
 defineExpose({
-  ClearOut
+  ClearOut,
+  ToBottom
 })
 </script>
 
 <style scoped>
+.card {
+  margin: 0 auto;
+  width: 65%;
+  height: 300px;
+  overflow-y: auto;
+}
 </style>
