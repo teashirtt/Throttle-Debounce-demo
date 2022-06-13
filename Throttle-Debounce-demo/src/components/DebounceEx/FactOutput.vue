@@ -24,7 +24,9 @@ const ClearOut = () => {
 
 const ToBottom = () => {
   let scroll = document.getElementById('card1');
-  scroll.scrollTop = scroll.scrollHeight;
+  setTimeout(() => {
+    scroll.scrollTop = scroll.scrollHeight;
+  }, 100);
 }
 
 defineExpose({

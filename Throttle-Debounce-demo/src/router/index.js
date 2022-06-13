@@ -5,6 +5,7 @@ import ThrottleView from '../views/ThrottleView.vue'
 import OtherContent from '../views/OtherContent.vue'
 import DebounceExample from '../views/DebounceExample.vue'
 import ThrottleExample from '../views/ThrottleExample.vue'
+import NotFound from '../views/NotFound.vue'
 const routes = [
   {
     path: '/',
@@ -36,6 +37,15 @@ const routes = [
     name: 'ThrottleExample',
     component: ThrottleExample
   },
+  {
+    path: '/404',
+    name: '404',
+    component: NotFound
+  },
+  {
+    path: '/:catchAll(.*)',
+    redirect: '/404'
+  }
 ]
 
 const router = createRouter({

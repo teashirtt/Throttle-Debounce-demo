@@ -23,7 +23,7 @@
 }
 
 .card-body:hover {
-    box-shadow: 3px 3px 10px gray;
-    transition: 500ms;
+    box-shadow: 10px 10px 10px gray;
+    transition: 300ms;
 }
 </style>

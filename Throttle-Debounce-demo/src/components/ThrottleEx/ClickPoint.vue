@@ -19,14 +19,12 @@
       <div class="card w-35">
         <div class="card-body">
           <h5 class="card-title">实际触发次数：{{ val1 }}</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
         </div>
       </div>
-      <br><br>
+      <br><br><br>
       <div class="card w-35">
         <div class="card-body">
           <h5 class="card-title">节流后触发次数：{{ val2 }}</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
         </div>
       </div>
     </div>
@@ -90,6 +88,7 @@ const func = (interval) => {
 
 .card-body {
   padding-top: 20px;
+  width: 600px;
 }
 
 .btn-group {
