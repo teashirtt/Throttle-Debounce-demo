@@ -6,7 +6,7 @@
 <script>
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap';
-
+import '@icon-park/vue-next/styles/index.css';
 export default {
   name: "App",
 }
