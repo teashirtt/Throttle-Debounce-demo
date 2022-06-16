@@ -8,9 +8,9 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link active normal" href="Debounce">防抖</a>
-          <a class="nav-link active normal" href="Throttle">节流</a>
-          <a class="nav-link active other" href="AboutMe">AboutMe</a>
+          <a class="nav-link active" href="Debounce">防抖</a>
+          <a class="nav-link active" href="Throttle">节流</a>
+          <a class="nav-link active" href="AboutMe">AboutMe</a>
         </div>
       </div>
     </div>
@@ -33,14 +33,7 @@
   font-size: 25px;
 }
 
-.normal {
-  margin-left: 30px;
+.nav-link {
   font-size: 20px;
-}
-
-.other {
-  position: absolute;
-  top: 23px;
-  right: 80px;
 }
 </style>

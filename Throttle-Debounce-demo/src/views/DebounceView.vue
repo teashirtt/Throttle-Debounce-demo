@@ -31,7 +31,7 @@
         </blockquote>
         <ul>
           <li>
-            <p>输入框频繁输入内容，搜索或者提交信息（发送ajax请求的时机）</p>
+            <p>输入框频繁输入内容，搜索或者提交信息（向后端发送请求的时机）</p>
           </li>
           <li>
             <p>调整浏览器窗口大小和缩放</p>
@@ -42,9 +42,6 @@
           </li>
         </ul>
         <h4>核心代码</h4>
-        <ul>
-          <li>500ms为自定义时间间隔</li>
-        </ul>
         <img src="../assets/DbCode.png" alt="">
       </div>
     </div>
@@ -59,7 +56,7 @@ import TabsNav from '../components/Tabs/TabsNav'
 </script>
 
 <style scoped>
-.card{
+.card {
   margin: 20px auto;
   width: 80%;
 }

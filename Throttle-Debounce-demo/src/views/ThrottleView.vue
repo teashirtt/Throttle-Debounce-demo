@@ -29,10 +29,6 @@
           <li>输入框搜索实现间接性联想</li>
         </ul>
         <h4>核心代码</h4>
-        <ul>
-          <li>注意代码中的执行次序，setTimout函数为异步操作</li>
-          <li>500ms为自定义时间间隔</li>
-        </ul>
         <img src="../assets/ThCode.png" alt="">
       </div>
     </div>
