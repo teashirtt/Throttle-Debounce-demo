@@ -2,22 +2,30 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="/">首页</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link active" href="Debounce">防抖</a>
-          <a class="nav-link active" href="Throttle">节流</a>
-          <a class="nav-link active" href="AboutMe">AboutMe</a>
-        </div>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="Debounce">防抖</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="Throttle">节流</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="AboutMe">AboutMe</a>
+          </li>
+        </ul>
       </div>
     </div>
   </nav>
 </template>
 
-<script setup>
+  <script setup>
 
 </script>
 
@@ -27,13 +35,15 @@
   padding-left: 30px;
   border: ridge;
   border-radius: 10px;
+  height: 8vh;
 }
 
 .navbar-brand {
-  font-size: 25px;
+  font-size: 26px;
 }
 
 .nav-link {
   font-size: 20px;
+  margin-left: 20px;
 }
 </style>

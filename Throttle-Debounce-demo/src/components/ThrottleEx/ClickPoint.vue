@@ -44,7 +44,7 @@ const throttle = () => {
   if (flag) {
     setTimeout(() => {
       val2.value++;
-      flag = true; 
+      flag = true;
     }, time.value)
   }
   flag = false;
@@ -92,10 +92,7 @@ const func = (interval) => {
 }
 
 .btn-group {
-  position: absolute;
-  height: 30px;
-  left: 7%;
-  top: 22%;
+  margin: 6px 80px;
 }
 </style>
 

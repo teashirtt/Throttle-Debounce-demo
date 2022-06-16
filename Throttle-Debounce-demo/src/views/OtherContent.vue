@@ -2,7 +2,7 @@
     <NavBar />
     <div class="container">
         <div class="text">关注我</div>
-        <github-one theme="outline" size="44" fill="#000000" @click="fun" />
+        <github-one theme="outline" size="44" fill="#000000" @click="fun" class="icon" />
     </div>
 
 </template>
@@ -29,5 +29,9 @@ const fun = () => {
 .text {
     font-size: 20px;
     font-weight: bold;
+}
+
+.icon {
+    cursor:pointer;
 }
 </style>
