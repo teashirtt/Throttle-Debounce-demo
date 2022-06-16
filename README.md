@@ -14,12 +14,12 @@
 
 - 确保本地有 nodejs 环境
   - 到这里下载环境 https://nodejs.org/en/download/
-  - 使用终端命令 npm -v ，node -v 进行验证
+  - 可以使用终端命令 npm -v ，node -v 进行验证
 - 在终端使用 npm i -g @vue/cli 命令安装 vue cli
-  - 使用终端命令 vue --version 进行验证
+  - 可以使用终端命令 vue --version 进行验证
 
 
-- 在项目文件下打开终端执行如下指令
-  - 运行 npm install
-  - 运行 npm run serve
-  - 点击端口即可
+- 在项目文件下打开终端
+  - 执行 npm install 
+  - 执行 npm run serve
+  - 正常情况下点击端口即可运行
