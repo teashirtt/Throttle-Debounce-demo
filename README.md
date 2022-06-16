@@ -19,4 +19,7 @@
   - 使用终端命令 vue --version 进行验证
 
 
-- 在项目文件下使用终端运行 npm run serve，打开端口即可
+- 在项目文件下打开终端执行如下指令
+  - 运行 npm install
+  - 运行 npm run serve
+  - 点击端口即可
